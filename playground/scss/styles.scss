@@ -27,6 +27,9 @@ img {
     padding: 0.8rem 3rem;
     border-radius: 4px;
     transition: 0.15s all ease-out;
+    &:first-child {
+            margin-right: 1.4rem;
+        }
     &--purple {
         background-image: linear-gradient(to bottom, #580475 , #DE1EE2);
         &:hover, :focus {
@@ -70,6 +73,7 @@ img {
     }
     &__footer {
         margin-top: 4rem;
+        display: flex;
     }
 }
 
@@ -95,6 +99,11 @@ img {
 }
 
 @media screen and (max-width: 900px) {
+    .btn {
+        &:first-child {
+            margin-left: -0.7rem;
+        }
+    }
     .project {
         flex-direction: column;
         text-align: center;
@@ -127,6 +136,7 @@ img {
         }
         &__footer {
             margin-top: 4rem;
+            justify-content: center;
         }
     }
 }
