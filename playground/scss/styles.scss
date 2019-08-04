@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+$blue : #004ba7;
+$purple:#580475;
+$light-purple: #DE1EE2;
+$lightest-purple: #feb5ff;
+
+html { 
+    font-size: 62.5%; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 0.8rem 3rem;
+    border-radius: 4px;
+    transition: 0.15s all ease-out;
+    &:first-child {
+            margin-right: 1.4rem;
+        }
+    &--purple {
+        background-image: linear-gradient(to bottom, $purple , $light-purple);
+        &:hover, :focus {
+            background-image: linear-gradient(to bottom,$lightest-purple);
+            color: #580475;
+        }
+    }
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    &__sidebar {
+        width: 50%;
+        padding: 0 1rem;
+        text-align: right;
+    } 
+    &__body {
+        width: 50%;
+        padding: 0 1rem;
+    }
+    &__image {
+        box-shadow: 0.4rem 0.4rem 0.8rem rgba(0,0,0,0.25);
+        width: 400px;
+    }
+    &__description {
+        font-size: 1.8rem;
+        margin: 2.2rem 0 0 0;
+        width: 60%;
+        color: #3C3C3C;
+    }
+    &__stack {
+        list-style: none;
+        display: flex;
+    }
+    &__title {
+        color: $purple;
+        font-weight: 500;
+        font-size: 3.6rem;
+        margin: 0 0 0.3rem 0;
+    }
+    &__footer {
+        margin-top: 4rem;
+        display: flex;
+    }
+}
+
+.stack {
+    &__item {
+        font-weight: 300;
+        font-size: 1.8rem;
+        padding: 0px 5px;
+        color: $light-purple;
+        border-right: solid 1px #2A8AFF;;
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .project {
+        &__description {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .btn {
+        &:first-child {
+            margin-left: -0.7rem;
+        }
+    }
+    .project {
+        flex-direction: column;
+        text-align: center;
+        &__sidebar {
+            width: 100%;
+            padding: 0 1rem;
+            text-align: center;
+        } 
+        &__body {
+            width: 100%;
+            padding: 0 1rem;
+        }
+        &__image {
+            box-shadow: 0.4rem 0.4rem 0.8rem rgba(0,0,0,0.25);
+            width: 50%;
+        }
+        &__description {
+            margin: 1.5rem auto 0 auto;
+            width: 60%;
+            font-size: 1.4rem;
+        }
+        &__stack {
+            justify-content: center;
+        }
+        &__title {
+            color: #043775;
+            font-weight: 500;
+            font-size: 3rem;
+            margin-top: 1.5rem;
+        }
+        &__footer {
+            margin-top: 4rem;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project {
+        &__description {
+            width: 80%;
+        }
+        &__image {
+            width: 80%;
+        }
+    }
+}
