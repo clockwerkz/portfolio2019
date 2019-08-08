@@ -78,6 +78,7 @@ nav {
         }
     }
     &__link {
+        text-decoration: none;
         font-weight: 300;
         color: #555;
         &--active {
@@ -96,13 +97,14 @@ nav {
 .hero {
     height: 100vh;
     width: 100%;
+    position: relative;
     &__body {
         display: flex;
         height: calc(100% - 6.2rem);
     }
     &__text {
         width: 50%;
-        padding: 10rem 8rem;
+        padding: 12rem 8rem;
     }
     &__image {
         width: 50%;
@@ -113,12 +115,13 @@ nav {
     }
     &__title {
         font-size: 4.5rem;
+        color: #14262D;
     }
     &__subtitle {
         font-weight: 300;
         letter-spacing: 0.4rem;
-        margin-top: 1rem;
-        color: #555;
+        margin-top: 1.5rem;
+        color: #818181;
         &:after {
             content: '';
             display: block;
@@ -127,7 +130,23 @@ nav {
             height: 1rem;
             background-color:#FCC999;
         }
-
+    }
+    &__location-text {
+        font-size: 2.4rem;
+        font-weight: 300;
+        color: #C1C1C1;
+        margin-top: 4rem;
+    }
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translate(-120%, 15%);
+        width: 50px;
+        height: 50px;
+        background-color:#FCC999;
     }
 }   
 
