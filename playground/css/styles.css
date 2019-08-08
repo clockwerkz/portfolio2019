@@ -128,6 +128,7 @@ nav {
 }
 
 .hero__image {
+  position: relative;
   width: 50%;
   background-image: url("../../images/architecture-balconies-building-1829191.jpg");
   background-repeat: no-repeat;
@@ -174,9 +175,26 @@ nav {
   width: 50px;
   height: 50px;
   background-color: #FCC999;
+  -webkit-clip-path: polygon(100% 0, 42% 0, 100% 100%);
+          clip-path: polygon(100% 0, 42% 0, 100% 100%);
 }
 
 /* PROJECTS SECTION */
+.projects__title {
+  margin: 10rem 8rem;
+  font-size: 4.5rem;
+  color: #14262D;
+}
+
+.projects__title:after {
+  content: '';
+  display: block;
+  margin-top: 0.5rem;
+  width: 17rem;
+  height: 1rem;
+  background-color: #FCC999;
+}
+
 .project {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,7 +329,7 @@ nav {
     width: 100%;
   }
   .hero__image {
-    display: none;
+    width: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
