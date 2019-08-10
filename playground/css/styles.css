@@ -34,6 +34,7 @@ img {
   -webkit-transition: 0.15s all ease-out;
   transition: 0.15s all ease-out;
   position: relative;
+  color: #000;
 }
 
 .btn:first-child {
@@ -48,6 +49,10 @@ img {
   background-color: #FCC999;
   -webkit-transition: 0.15s all ease-out;
   transition: 0.15s all ease-out;
+}
+
+.btn--underline:hover, .btn--underline :focus {
+  color: #076db6;
 }
 
 .btn--underline:hover:after, .btn--underline :focus:after {
@@ -169,8 +174,7 @@ nav {
   margin-top: 4rem;
 }
 
-.hero:after {
-  content: '';
+.hero__down-arrow {
   display: block;
   position: absolute;
   bottom: 15px;
@@ -182,6 +186,21 @@ nav {
   background-color: #FCC999;
   -webkit-clip-path: polygon(100% 0, 42% 0, 100% 100%);
           clip-path: polygon(100% 0, 42% 0, 100% 100%);
+}
+
+.hero:after {
+  content: '';
+  display: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 15%);
+          transform: translate(-50%, 15%);
+  background-color: #000;
+  -webkit-clip-path: polygon(100% 0, 42% 100%, 42% 0);
+          clip-path: polygon(100% 0, 42% 100%, 42% 0);
 }
 
 /* PROJECTS SECTION */
@@ -224,19 +243,34 @@ nav {
 .project__body {
   width: 50%;
   padding: 0 1rem;
+  margin-top: -1rem;
 }
 
 .project__image {
   -webkit-box-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.25);
           box-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.25);
-  width: 400px;
-  margin: 0 2rem;
+  width: 450px;
+  min-height: 300px;
+  margin: 0 2rem 0 auto;
+  -webkit-transition: 0.15s all ease-out;
+  transition: 0.15s all ease-out;
+  background-size: cover;
+  background-position: center;
+}
+
+.project__image--trello {
+  background-image: url("../../images/trelloCloneBW.PNG");
+}
+
+.project__image--trello:hover {
+  background-image: url("../../images/trelloClone.PNG");
 }
 
 .project__description {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin: 2.2rem 0 0 0;
-  width: 60%;
+  width: 80%;
+  min-height: 150px;
   color: #324857;
 }
 
@@ -255,7 +289,7 @@ nav {
 }
 
 .project__footer {
-  margin-top: 4rem;
+  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,12 +308,18 @@ nav {
 }
 
 @media screen and (max-width: 1200px) {
+  .hero__text {
+    padding-right: 0rem;
+  }
   .project__description {
-    width: 80%;
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 900px) {
+  .hero__text {
+    padding-left: 3rem;
+  }
   .btn:first-child {
     margin-left: -0.7rem;
   }
@@ -303,10 +343,13 @@ nav {
     -webkit-box-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.25);
             box-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.25);
     width: 50%;
+    min-width: 450px;
+    margin: 0 auto;
   }
   .project__description {
     margin: 1.5rem auto 0 auto;
     width: 60%;
+    min-height: 0;
     font-size: 1.4rem;
   }
   .project__stack {
@@ -321,7 +364,7 @@ nav {
     margin-top: 1.5rem;
   }
   .project__footer {
-    margin-top: 4rem;
+    margin-top: 2rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -337,9 +380,37 @@ nav {
   }
   .hero__text {
     width: 100%;
+    text-align: center;
+    padding: 4rem 0;
+  }
+  .hero__subtitle {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .hero__subtitle:after {
+    content: '';
+    display: block;
+    margin-top: 0.5rem;
+    width: 12rem;
+    height: 1rem;
+    background-color: #FCC999;
   }
   .hero__image {
     width: 0;
+  }
+  .hero:after {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project__description {
+    width: 80%;
+  }
+  .project__image {
+    width: 100%;
+    min-width: 0;
+    min-height: 250px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

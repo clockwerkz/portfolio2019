@@ -44,6 +44,7 @@ img {
     border-radius: 4px;
     transition: 0.15s all ease-out;
     position: relative;
+    color: #000;
     &:first-child {
             margin-right: 3rem;
         }
@@ -57,6 +58,7 @@ img {
             transition: 0.15s all ease-out;
         }
         &:hover, :focus {
+            color: #076db6;
             &:after {
                 width: 100%;
             }
@@ -157,8 +159,7 @@ nav {
         color: #C1C1C1;
         margin-top: 4rem;
     }
-    &:after {
-        content: '';
+    &__down-arrow {
         display: block;
         position: absolute;
         bottom: 15px;
@@ -168,7 +169,18 @@ nav {
         height: 50px;
         background-color:#FCC999;
         clip-path: polygon(100% 0, 42% 0, 100% 100%);
-
+    }
+    &:after {
+        content: '';
+        display: none;
+        position:absolute;
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        left: 50%;
+        transform: translate(-50%, 15%);
+        background-color: #000;
+        clip-path: polygon(100% 0, 42% 100%, 42% 0,);
     }
 }   
 
@@ -204,16 +216,28 @@ nav {
     &__body {
         width: 50%;
         padding: 0 1rem;
+        margin-top: -1rem;
     }
     &__image {
         box-shadow: 0.4rem 0.4rem 0.8rem rgba(0,0,0,0.25);
-        width: 400px;
-        margin: 0 2rem;
+        width: 450px;
+        min-height: 300px;
+        margin: 0 2rem 0 auto;
+        transition: 0.15s all ease-out;
+        background-size: cover;
+        background-position: center;
+        &--trello {
+            background-image: url("../../images/trelloCloneBW.PNG");
+            &:hover {
+                background-image: url("../../images/trelloClone.PNG"); 
+            }
+        }
     }
     &__description {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin: 2.2rem 0 0 0;
-        width: 60%;
+        width: 80%;
+        min-height: 150px;
         color: #324857;
     }
     &__stack {
@@ -227,7 +251,7 @@ nav {
         margin: 0 0 0.3rem 0;
     }
     &__footer {
-        margin-top: 4rem;
+        margin-top: 1rem;
         display: flex;
     }
 }
@@ -246,14 +270,24 @@ nav {
 }
 
 @media screen and (max-width: 1200px) {
+    .hero {
+        &__text {
+            padding-right: 0rem;
+        }
+    }
     .project {
         &__description {
-            width: 80%;
+            width: 90%;
         }
     }
 }
 
 @media screen and (max-width: 900px) {
+    .hero {
+        &__text {
+            padding-left: 3rem;
+        }
+    }
     .btn {
         &:first-child {
             margin-left: -0.7rem;
@@ -274,10 +308,13 @@ nav {
         &__image {
             box-shadow: 0.4rem 0.4rem 0.8rem rgba(0,0,0,0.25);
             width: 50%;
+            min-width: 450px;
+            margin: 0 auto;
         }
         &__description {
             margin: 1.5rem auto 0 auto;
             width: 60%;
+            min-height: 0;
             font-size: 1.4rem;
         }
         &__stack {
@@ -290,7 +327,7 @@ nav {
             margin-top: 1.5rem;
         }
         &__footer {
-            margin-top: 4rem;
+            margin-top: 2rem;
             justify-content: center;
         }
     }
@@ -308,23 +345,39 @@ nav {
     .hero {
         &__text {
             width: 100%;
+            text-align: center;
+            padding: 4rem 0;
+        }
+        &__subtitle {
+            display: inline-block;
+            margin: 0 auto;
+            &:after {
+                content: '';
+                display: block;
+                margin-top: 0.5rem;
+                width: 12rem;
+                height: 1rem;
+                background-color:#FCC999;
+            }
         }
         &__image {
             width: 0;
-            // &:after {
-            //     content: '';
-            //     display: block;
-            //     position: absolute;
-            //     bottom: -50%;
-            //     left: -50%;
-            //     transform: translate(-0%, 0%);
-            //     width: 50px;
-            //     height: 50px;
-            //     background-color:#000000;
-            //     clip-path: polygon(100% 0, 42% 0, 46% 99%);
+        }
+        &:after {
+            display: block;
+        }
+    }
+}
 
-        
-            // }
+@media screen and (max-width: 480px) {
+    .project {
+        &__description {
+            width: 80%;
+        }
+        &__image {
+            width: 100%;
+            min-width: 0;
+            min-height: 250px;
         }
     }
 }
