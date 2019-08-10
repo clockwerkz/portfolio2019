@@ -231,45 +231,45 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 85%;
   margin: 0 auto;
 }
 
 .project__sidebar {
-  width: 50%;
+  width: 40%;
   margin: 0 2rem;
   text-align: right;
+  position: relative;
 }
 
 .project__body {
   width: 50%;
   padding: 0 1rem;
-  margin-top: -1rem;
 }
 
 .project__image {
   -webkit-box-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.25);
           box-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.25);
-  width: 450px;
-  min-height: 300px;
-  margin: 0 2rem 0 auto;
+  width: 100%;
+  height: auto;
+  margin: 0 1rem 0 auto;
   -webkit-transition: 0.15s all ease-out;
   transition: 0.15s all ease-out;
-  background-size: cover;
-  background-position: center;
 }
 
-.project__image--trello {
-  background-image: url("../../images/trelloCloneBW.PNG");
+.project__image--overlay {
+  position: absolute;
+  opacity: 0;
 }
 
-.project__image--trello:hover {
-  background-image: url("../../images/trelloClone.PNG");
+.project__image--overlay:hover {
+  opacity: 1;
 }
 
 .project__description {
   font-size: 1.6rem;
   margin: 2.2rem 0 0 0;
-  width: 80%;
+  width: 100%;
   min-height: 150px;
   color: #324857;
 }
@@ -310,6 +310,9 @@ nav {
 @media screen and (max-width: 1200px) {
   .hero__text {
     padding-right: 0rem;
+  }
+  .project {
+    width: 95%;
   }
   .project__description {
     width: 90%;

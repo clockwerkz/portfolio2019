@@ -207,36 +207,36 @@ nav {
 .project {
     display: flex;
     flex-direction: row;
+    width: 85%;
     margin: 0 auto;
     &__sidebar {
-        width: 50%;
+        width: 40%;
         margin: 0 2rem;
         text-align: right;
+        position: relative;
     } 
     &__body {
         width: 50%;
         padding: 0 1rem;
-        margin-top: -1rem;
     }
     &__image {
         box-shadow: 0.4rem 0.4rem 0.8rem rgba(0,0,0,0.25);
-        width: 450px;
-        min-height: 300px;
-        margin: 0 2rem 0 auto;
+        width: 100%;
+        height: auto;
+        margin: 0 1rem 0 auto;
         transition: 0.15s all ease-out;
-        background-size: cover;
-        background-position: center;
-        &--trello {
-            background-image: url("../../images/trelloCloneBW.PNG");
+        &--overlay {
+            position: absolute;
+            opacity: 0;
             &:hover {
-                background-image: url("../../images/trelloClone.PNG"); 
+                opacity: 1;
             }
         }
     }
     &__description {
         font-size: 1.6rem;
         margin: 2.2rem 0 0 0;
-        width: 80%;
+        width: 100%;
         min-height: 150px;
         color: #324857;
     }
@@ -276,6 +276,7 @@ nav {
         }
     }
     .project {
+        width: 95%;
         &__description {
             width: 90%;
         }
