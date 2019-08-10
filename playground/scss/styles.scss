@@ -44,6 +44,7 @@ img {
     transition: 0.15s all ease-out;
     position: relative;
     color: #000;
+    text-decoration: none;
     &:first-child {
             margin-right: 3rem;
         }
@@ -160,7 +161,7 @@ nav {
     &__location-text {
         font-size: 2.4rem;
         font-weight: 300;
-        color: #C1C1C1;
+        color: #818181;
         margin-top: 4rem;
     }
     &__down-arrow {
