@@ -461,6 +461,9 @@ footer {
     text-align: center;
     padding: 4rem 0;
   }
+  .hero:after {
+    bottom: 60px;
+  }
   .hero__subtitle {
     display: inline-block;
     margin: 0 auto;
@@ -478,6 +481,9 @@ footer {
   }
   .hero:after {
     display: block;
+  }
+  .hero__down-arrow {
+    bottom: 60px;
   }
 }
 

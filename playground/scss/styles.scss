@@ -413,7 +413,10 @@ footer {
         &__text {
             width: 100%;
             text-align: center;
-            padding: 4rem 0;
+            padding: 4rem 0;  
+        }
+        &:after {
+            bottom: 60px;
         }
         &__subtitle {
             display: inline-block;
@@ -432,6 +435,9 @@ footer {
         }
         &:after {
             display: block;
+        }
+        &__down-arrow {
+            bottom: 60px;
         }
     }
 }
