@@ -24,29 +24,31 @@ img {
 }
 
 .btn {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: white;
+  background: none;
   border: none;
-  padding: 0.8rem 3rem;
+  padding: 0.8rem 0;
   border-radius: 4px;
   -webkit-transition: 0.15s all ease-out;
   transition: 0.15s all ease-out;
+  position: relative;
 }
 
 .btn:first-child {
-  margin-right: 1.4rem;
+  margin-right: 3rem;
 }
 
-.btn--purple {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#580475), to(#DE1EE2));
-  background-image: linear-gradient(to bottom, #580475, #DE1EE2);
+.btn--underline:after {
+  content: '';
+  display: block;
+  width: 0rem;
+  height: 1rem;
+  background-color: #FCC999;
 }
 
-.btn--purple:hover, .btn--purple :focus {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#feb5ff));
-  background-image: linear-gradient(to bottom, #feb5ff);
-  color: #580475;
+.btn--underline:hover:after, .btn--underline :focus:after {
+  width: 6rem;
 }
 
 /* HERO SECTION */
@@ -137,7 +139,7 @@ nav {
 }
 
 .hero__title {
-  font-size: 4.5rem;
+  font-size: 6.5rem;
   color: #14262D;
 }
 
@@ -180,9 +182,13 @@ nav {
 }
 
 /* PROJECTS SECTION */
+.projects {
+  padding: 12rem 0;
+}
+
 .projects__title {
-  margin: 12rem 10rem 10rem;
-  font-size: 4.5rem;
+  margin: 0 10rem 10rem;
+  font-size: 5rem;
   color: #19232A;
 }
 
@@ -190,8 +196,8 @@ nav {
   content: '';
   display: block;
   margin-top: 0.5rem;
-  width: 17rem;
-  height: 1rem;
+  width: 19rem;
+  height: 1.5rem;
   background-color: #FCC999;
 }
 
@@ -208,7 +214,7 @@ nav {
 
 .project__sidebar {
   width: 50%;
-  padding: 0 1rem;
+  margin: 0 2rem;
   text-align: right;
 }
 
@@ -221,6 +227,7 @@ nav {
   -webkit-box-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.25);
           box-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.25);
   width: 400px;
+  margin: 0 2rem;
 }
 
 .project__description {
