@@ -15,9 +15,9 @@
     <section class="hero">
         <nav>
             <ul class="navbar">
-                <li class="navbar__item"><a class="navbar__link navbar__link--active" href="#">Home</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Home</a></li>
                 <li class="navbar__item"><a class="navbar__link" href="#projects">Projects</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#">Contact</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#contact">Contact</a></li>
             </ul>
             <ul class="social-media">
                     <li class="social-media__item"><a href="" target="_blank" class="social-media__link"><i class="fas fa-envelope-square"></i></a></li>
@@ -40,10 +40,10 @@
     <!-- PROJECTS -->
 
     <section class="projects" id="projects">
-        <h1 class="projects__title">Projects</h1>
+        <h1 class="projects__title" tabindex="1">Projects</h1>
         <div class="project">
             <div class="project__sidebar">
-                <img class="project__image project__image--overlay" src="../images/JobShark.png"></img>
+                <img class="project__image project__image--overlay" tabindex="1" src="../images/JobShark.png"></img>
                 <img class="project__image" src="../images/JobSharkBW.png"></img>
             </div>
             <div class="project__body">
@@ -68,7 +68,57 @@
         </div>
         <div class="project">
             <div class="project__sidebar">
-                <img class="project__image project__image--overlay" src="../images/trelloClone.PNG"></img>
+                <img class="project__image project__image--overlay" tabindex="1" src="../images/trelloClone.PNG"></img>
+                <img class="project__image" src="../images/trelloCloneBW.PNG"></img>
+            </div>
+            <div class="project__body">
+                <div class="project__header">
+                    <h2 class="project__title">
+                        Trello Clone
+                    </h2>
+                    <ul class="project__stack">
+                        <li class="stack__item">React</li>
+                        <li class="stack__item">SCSS</li>
+                    </ul>
+                </div>
+                <p class="project__description">
+                    As part of another <strong>Chingu Cohort</strong>, we created a clone of the popular project management app Trello. Has Drag and Drop functionality, and utilizes localStorage for data persistence.
+                    <br>Users can create project folders and cards, and witin each card, add a description, create a tasklist and set a due date.
+                </p>
+                <div class="project__footer">
+                    <button class="btn btn--underline">DEMO</button>
+                    <button class="btn btn--underline">REPO</button>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project__sidebar">
+                <img class="project__image project__image--overlay" tabindex="1" src="../images/meteorite.PNG"></img>
+                <img class="project__image" src="../images/meteoriteBW.PNG"></img>
+            </div>
+            <div class="project__body">
+                <div class="project__header">
+                    <h2 class="project__title">
+                        Meteorite Data
+                    </h2>
+                    <ul class="project__stack">
+                        <li class="stack__item">React Hooks</li>
+                        <li class="stack__item">Custom Pagination</li>
+                    </ul>
+                </div>
+                <p class="project__description">
+                    The Meteorite App makes use of NASA's meteorite landing API. Users can search for meteorite strikes by meteor name. Search options include starts with and contains.<br>
+                    I also incorporated pagination in the returned results, so users can page forward and backwards, and also change the amount of meteors displayed per page.
+                </p>
+                <div class="project__footer">
+                    <button class="btn btn--underline">DEMO</button>
+                    <button class="btn btn--underline">REPO</button>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project__sidebar">
+                <img class="project__image project__image--overlay" tabindex="1" src="../images/trelloClone.PNG"></img>
                 <img class="project__image" src="../images/trelloCloneBW.PNG"></img>
             </div>
             <div class="project__body">
@@ -96,7 +146,7 @@
 
     <!-- FOOTER -->
 
-    <footer>
+    <footer id="contact">
         <div class="container">
             <div class="footer">
                 <div class="footer__email">

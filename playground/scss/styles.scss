@@ -212,7 +212,7 @@ nav {
     display: flex;
     flex-direction: row;
     width: 85%;
-    margin: 0 auto 6rem;
+    margin: 0 auto 12rem;
     &__sidebar {
         width: 40%;
         margin: 0 2rem;
@@ -242,6 +242,7 @@ nav {
     }
     &__description {
         font-size: 1.6rem;
+        line-height: 2.4rem;
         width: 100%;
         min-height: 150px;
         color: #324857;
@@ -364,6 +365,11 @@ footer {
             width: 50%;
             min-width: 450px;
             margin: 0 auto;
+            &--overlay {
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0 auto;  
+            }
         }
         &__description {
             margin: 1.5rem auto 0 auto;
