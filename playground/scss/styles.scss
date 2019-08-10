@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
-@import 'variables';
+$blue : #004ba7;
+$purple:#580475;
+$light-purple: #DE1EE2;
+$lightest-purple: #feb5ff;
+$light-blue: #219DF3;
+$dark-blue: #19232A;
+/* MAIN COLORS */
+$primary : $purple;
+$secondary : $light-blue;
+$contrast : $blue;
 
 
 /* STANDARD ELEMENTS */
@@ -104,7 +113,7 @@ nav {
     }
     &__text {
         width: 50%;
-        padding: 12rem 8rem;
+        padding: 12rem 10rem;
     }
     &__image {
         position: relative;
@@ -158,9 +167,9 @@ nav {
 
 .projects {
     &__title {
-        margin: 10rem 8rem;
+        margin: 12rem 10rem 10rem;
         font-size: 4.5rem;
-        color: #14262D;
+        color: $dark-blue;
         &:after {
             content: '';
             display: block;
@@ -193,14 +202,14 @@ nav {
         font-size: 1.8rem;
         margin: 2.2rem 0 0 0;
         width: 60%;
-        color: #3C3C3C;
+        color: #324857;
     }
     &__stack {
         list-style: none;
         display: flex;
     }
     &__title {
-        color: $purple;
+        color: $dark-blue;
         font-weight: 500;
         font-size: 3.6rem;
         margin: 0 0 0.3rem 0;
@@ -216,7 +225,7 @@ nav {
         font-weight: 300;
         font-size: 1.8rem;
         padding: 0px 5px;
-        color: $light-purple;
+        color: $light-blue;
         border-right: solid 1px #2A8AFF;;
         &:last-child {
             border-right: none;

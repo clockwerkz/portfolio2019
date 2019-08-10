@@ -124,7 +124,7 @@ nav {
 
 .hero__text {
   width: 50%;
-  padding: 12rem 8rem;
+  padding: 12rem 10rem;
 }
 
 .hero__image {
@@ -181,9 +181,9 @@ nav {
 
 /* PROJECTS SECTION */
 .projects__title {
-  margin: 10rem 8rem;
+  margin: 12rem 10rem 10rem;
   font-size: 4.5rem;
-  color: #14262D;
+  color: #19232A;
 }
 
 .projects__title:after {
@@ -227,7 +227,7 @@ nav {
   font-size: 1.8rem;
   margin: 2.2rem 0 0 0;
   width: 60%;
-  color: #3C3C3C;
+  color: #324857;
 }
 
 .project__stack {
@@ -238,7 +238,7 @@ nav {
 }
 
 .project__title {
-  color: #580475;
+  color: #19232A;
   font-weight: 500;
   font-size: 3.6rem;
   margin: 0 0 0.3rem 0;
@@ -255,7 +255,7 @@ nav {
   font-weight: 300;
   font-size: 1.8rem;
   padding: 0px 5px;
-  color: #DE1EE2;
+  color: #219DF3;
   border-right: solid 1px #2A8AFF;
 }
 
