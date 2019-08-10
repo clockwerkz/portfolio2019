@@ -25,6 +25,7 @@ img {
 
 .btn {
   font-size: 2rem;
+  cursor: pointer;
   font-weight: bold;
   background: none;
   border: none;
@@ -42,13 +43,15 @@ img {
 .btn--underline:after {
   content: '';
   display: block;
-  width: 0rem;
+  width: 0;
   height: 1rem;
   background-color: #FCC999;
+  -webkit-transition: 0.15s all ease-out;
+  transition: 0.15s all ease-out;
 }
 
 .btn--underline:hover:after, .btn--underline :focus:after {
-  width: 6rem;
+  width: 100%;
 }
 
 /* HERO SECTION */

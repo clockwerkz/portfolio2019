@@ -36,6 +36,7 @@ img {
 
 .btn {
     font-size: 2rem;
+    cursor: pointer;
     font-weight: bold;
     background: none;
     border: none;
@@ -50,13 +51,14 @@ img {
         &:after {
             content: '';
             display: block;
-            width: 0rem;
+            width: 0;
             height: 1rem;
             background-color: #FCC999;
+            transition: 0.15s all ease-out;
         }
         &:hover, :focus {
             &:after {
-                width: 6rem;
+                width: 100%;
             }
         }
     }
