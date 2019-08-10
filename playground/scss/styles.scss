@@ -188,7 +188,7 @@ nav {
 /* PROJECTS SECTION */
 
 .projects {
-    padding: 12rem 0;
+    padding: 12rem 3rem;
     &__title {
         margin: 0 10rem 10rem;
         font-size: 5rem;
@@ -205,6 +205,7 @@ nav {
 }
 
 .project {
+    border: 1px solid black;
     display: flex;
     flex-direction: row;
     width: 85%;
@@ -294,6 +295,11 @@ nav {
             margin-left: -0.7rem;
         }
     }
+    .projects {
+        &__title {
+            margin-left: 0;
+        }
+    }
     .project {
         flex-direction: column;
         text-align: center;
@@ -339,8 +345,14 @@ nav {
         &__description {
             width: 80%;
         }
+        &__sidebar {
+            margin: 0;
+            padding: 0;
+        }
         &__image {
             width: 80%;
+            min-width: 0;
+            min-height: 0;
         }
     }
     .hero {
@@ -371,6 +383,15 @@ nav {
 }
 
 @media screen and (max-width: 480px) {
+    // .hero {
+    //     &__down-arrow {
+    //         transform: translateX(0%);
+    //         left: 35%;
+    //     }
+    //     &:after {
+        
+    //     }
+    // }
     .project {
         &__description {
             width: 80%;
@@ -378,7 +399,9 @@ nav {
         &__image {
             width: 100%;
             min-width: 0;
-            min-height: 250px;
         }
+    }
+    .projects {
+        width: 100%;
     }
 }
