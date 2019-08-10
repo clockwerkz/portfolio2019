@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 </head>
 <body>
+
+    <!-- HERO -->
+
     <section class="hero">
         <nav>
             <ul class="navbar">
@@ -32,24 +35,55 @@
             <div class="hero__down-arrow"></div>
         </div>
     </section>
+
+
+    <!-- PROJECTS -->
+
     <section class="projects" id="projects">
         <h1 class="projects__title">Projects</h1>
+        <div class="project">
+            <div class="project__sidebar">
+                <img class="project__image project__image--overlay" src="../images/JobShark.png"></img>
+                <img class="project__image" src="../images/JobSharkBW.png"></img>
+            </div>
+            <div class="project__body">
+                <div class="project__header">
+                    <h2 class="project__title">
+                        Job Shark
+                    </h2>
+                    <ul class="project__stack">
+                        <li class="stack__item">MERN Stack</li>
+                        <li class="stack__item">React Hooks</li>
+                    </ul>
+                </div>
+                <p class="project__description">
+                    I worked with a team of four devs through the <strong>Chingu Cohort</strong> to create a job application tracking app. The app allows a user to register and login, and add/delete job application entries.<br>
+                    Users can mark the status of each application depending on where they are in the process, and a convinient Summary section offers a statistical breakdown of all their app entries.
+                </p>
+                <div class="project__footer">
+                    <button class="btn btn--underline">DEMO</button>
+                    <button class="btn btn--underline">REPO</button>
+                </div>
+            </div>
+        </div>
         <div class="project">
             <div class="project__sidebar">
                 <img class="project__image project__image--overlay" src="../images/trelloClone.PNG"></img>
                 <img class="project__image" src="../images/trelloCloneBW.PNG"></img>
             </div>
             <div class="project__body">
-                <h2 class="project__title">
-                    Trello Clone
-                </h2>
-                <ul class="project__stack">
-                    <li class="stack__item">React</li>
-                    <li class="stack__item">SCSS</li>
-                </ul>
+                <div class="project__header">
+                    <h2 class="project__title">
+                        Trello Clone
+                    </h2>
+                    <ul class="project__stack">
+                        <li class="stack__item">React</li>
+                        <li class="stack__item">SCSS</li>
+                    </ul>
+                </div>
                 <p class="project__description">
-                    I worked with a team of four devs through the Chingu Cohort to create this project. It's a clone of the popular project management app Trello. Has a Drag and Drop interface, and utilizes localStorage for data persistence.
-                    <br>Users can create project folders and cards, and each card can contain tasklists that display a task bar with percentage completion.
+                    This project was the result of another <strong>Chingu Cohort</strong>. We created a clone of the popular project management app Trello. Has Drag and Drop functionality, and utilizes localStorage for data persistence.
+                    <br>Users can create project folders and cards, and witin each card, add a description, create a tasklist and set a due date.
                 </p>
                 <div class="project__footer">
                     <button class="btn btn--underline">DEMO</button>
@@ -58,6 +92,26 @@
             </div>
         </div>
     </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer__email">
+                    <i class="fas fa-envelope-square"></i>
+                    <a href="#" class="email__link">carlosmfins@gmail.com</a>
+                </div>
+                <div class="footer-media__wrapper">
+                    <ul class="footer-media">
+                        <li class="media__link"><i class="fab fa-github-square"> github</i></a></li></li>
+                        <li class="media__link"><i class="fab fa-linkedin"> linkedin</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="js/app.js"></script>
 </body>
 </html>

@@ -40,7 +40,6 @@ img {
     font-weight: bold;
     background: none;
     border: none;
-    padding: 0.8rem 0;
     border-radius: 4px;
     transition: 0.15s all ease-out;
     position: relative;
@@ -64,6 +63,11 @@ img {
             }
         }
     }
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
 }
 
 
@@ -121,7 +125,7 @@ nav {
     position: relative;
     &__body {
         display: flex;
-        height: calc(100% - 6.2rem);
+        height: calc(100% - 7rem);
     }
     &__text {
         width: 50%;
@@ -188,7 +192,7 @@ nav {
 /* PROJECTS SECTION */
 
 .projects {
-    padding: 12rem 3rem;
+    padding: 10rem 3rem;
     &__title {
         margin: 0 10rem 10rem;
         font-size: 5rem;
@@ -205,11 +209,10 @@ nav {
 }
 
 .project {
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
     width: 85%;
-    margin: 0 auto;
+    margin: 0 auto 6rem;
     &__sidebar {
         width: 40%;
         margin: 0 2rem;
@@ -219,6 +222,9 @@ nav {
     &__body {
         width: 50%;
         padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     &__image {
         box-shadow: 0.4rem 0.4rem 0.8rem rgba(0,0,0,0.25);
@@ -236,7 +242,6 @@ nav {
     }
     &__description {
         font-size: 1.6rem;
-        margin: 2.2rem 0 0 0;
         width: 100%;
         min-height: 150px;
         color: #324857;
@@ -270,6 +275,43 @@ nav {
     }
 }
 
+/* FOOTER SECTION */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 2rem 0 5rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    
+    i {
+        color: white;
+        font-size: 1.5rem;
+    }
+}
+
+.email__link {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-media {
+    list-style: none;
+}
+
+.media {
+    &__link {
+        color: white;
+    }
+}
+
+/******************/
+/*  MEDIA QUERIES */
+/******************/
+
 @media screen and (max-width: 1200px) {
     .hero {
         &__text {
@@ -278,6 +320,11 @@ nav {
     }
     .project {
         width: 95%;
+        &__sidebar {
+            display: flex;
+            align-items:center;
+
+        }
         &__description {
             width: 90%;
         }
@@ -382,19 +429,18 @@ nav {
     }
 }
 
-@media screen and (max-width: 480px) {
-    // .hero {
-    //     &__down-arrow {
-    //         transform: translateX(0%);
-    //         left: 35%;
-    //     }
-    //     &:after {
-        
-    //     }
-    // }
+@media screen and (max-width: 480px) { 
+    .hero {
+        &__text {
+            padding-top: 8rem;
+        }
+        &__title {
+            font-size: 6rem;
+        }
+    }
     .project {
         &__description {
-            width: 80%;
+            width: 100%;
         }
         &__image {
             width: 100%;
