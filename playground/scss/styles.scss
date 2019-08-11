@@ -130,7 +130,7 @@ nav {
     }
     &__text {
         width: 50%;
-        padding: 12rem 10rem;
+        padding: 12vh 10rem;
     }
     &__image {
         position: relative;
@@ -338,6 +338,9 @@ footer {
         &__text {
             padding-left: 3rem;
         }
+        &__title {
+            font-size: 5rem;
+        }
     }
     .btn {
         &:first-child {
@@ -345,6 +348,7 @@ footer {
         }
     }
     .projects {
+        padding-top: 3rem;
         &__title {
             margin-left: 0;
         }

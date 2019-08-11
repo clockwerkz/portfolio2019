@@ -139,7 +139,7 @@ nav {
 
 .hero__text {
   width: 50%;
-  padding: 12rem 10rem;
+  padding: 12vh 10rem;
 }
 
 .hero__image {
@@ -383,8 +383,14 @@ footer {
   .hero__text {
     padding-left: 3rem;
   }
+  .hero__title {
+    font-size: 5rem;
+  }
   .btn:first-child {
     margin-left: -0.7rem;
+  }
+  .projects {
+    padding-top: 3rem;
   }
   .projects__title {
     margin-left: 0;
