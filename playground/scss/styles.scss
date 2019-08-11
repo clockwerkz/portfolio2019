@@ -304,23 +304,34 @@ nav {
 footer {
     background-color: black;
     color: #999;
-    padding: 3rem 0 5rem;
+    padding: 1rem 0 5rem;
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     font-size: 2rem;
-    i {
-        color: #c7c7c7;
-        font-size: 2rem;
+    &__links {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        i {
+            color: #c7c7c7;
+            font-size: 2rem;
+        }
     }
+    
 }
 
 .email__link {
+    display: block;
+    margin: 0 auto 2rem;
     text-decoration: none;
     color: #c7c7c7;
     font-size: 2rem;
+    i { 
+        font-size: 2rem;
+        color: #c7c7c7;
+    }
     &:hover, &:focus {
         color: #FFF;
         i {
