@@ -378,7 +378,7 @@ footer {
         }
         &__description {
             margin: 1.5rem auto 0 auto;
-            width: 60%;
+            
             min-height: 0;
             font-size: 1.4rem;
         }
@@ -401,7 +401,8 @@ footer {
 @media screen and (max-width: 600px) {
     .project {
         &__description {
-            width: 80%;
+            text-align: justify;
+            width: 90%;
         }
         &__sidebar {
             margin: 0;
