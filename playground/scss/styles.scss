@@ -14,7 +14,8 @@ $contrast : $blue;
 /* STANDARD ELEMENTS */
 
 html { 
-    font-size: 62.5%; 
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -104,6 +105,7 @@ nav {
         }
     }
     &__link {
+        cursor: pointer;
         text-decoration: none;
         font-weight: 300;
         color: #7c7c7c;
@@ -117,6 +119,7 @@ nav {
 .fab, .fas {
     font-size: 3rem;
     color: #000;
+    cursor: pointer;
 }
 
 
