@@ -312,7 +312,7 @@ nav {
   line-height: 2.4rem;
   width: 100%;
   min-height: 150px;
-  color: #324857;
+  color: #636363;
 }
 
 .project__stack {
@@ -384,7 +384,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2rem;
+  margin: 2rem 0 1rem;
 }
 
 .email__link {
@@ -510,7 +510,6 @@ footer {
             justify-content: center;
   }
   .project__title {
-    color: #043775;
     font-weight: 500;
     font-size: 3rem;
     margin-top: 1.5rem;

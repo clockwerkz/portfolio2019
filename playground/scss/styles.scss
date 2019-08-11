@@ -264,7 +264,8 @@ nav {
         line-height: 2.4rem;
         width: 100%;
         min-height: 150px;
-        color: #324857;
+        color: #636363;
+        
     }
     &__stack {
         list-style: none;
@@ -325,7 +326,7 @@ footer {
 .email{
     &__wrapper {
         display: flex;
-        margin-top: 2rem;
+        margin: 2rem 0 1rem;
     }
     &__link {
         display: block;
@@ -444,7 +445,6 @@ footer {
             justify-content: center;
         }
         &__title {
-            color: #043775;
             font-weight: 500;
             font-size: 3rem;
             margin-top: 1.5rem;
