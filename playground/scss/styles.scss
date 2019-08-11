@@ -100,6 +100,9 @@ nav {
 .navbar {
     list-style: none;
     display: flex;
+    &--footer {
+        flex-direction: column;
+    }
     &__item {
         font-size: 2rem;
         margin-right: 3rem;
@@ -112,6 +115,14 @@ nav {
         text-decoration: none;
         font-weight: 300;
         color: #7c7c7c;
+        &--footer {
+            cursor: pointer;
+            text-decoration: none;
+            color: #c7c7c7;
+            &:hover, &:active {
+                color: white;
+            }
+        }
         &:hover {
             color: #000;
 
@@ -493,6 +504,10 @@ footer {
             margin-top: 1.5rem;
         }
     }
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 480px) { 
@@ -515,9 +530,5 @@ footer {
     }
     .projects {
         width: 100%;
-    }
-    .footer {
-        flex-direction: column;
-        justify-content: center;
     }
 }
