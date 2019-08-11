@@ -53,7 +53,7 @@ img {
 }
 
 .btn--underline:hover, .btn--underline :focus {
-  color: #818181;
+  color: #04cc90;
 }
 
 .btn--underline:hover:after, .btn--underline :focus:after {
