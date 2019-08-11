@@ -106,10 +106,10 @@ nav {
     &__link {
         text-decoration: none;
         font-weight: 300;
-        color: #555;
-        &--active {
+        color: #7c7c7c;
+        &:hover {
             color: #000;
-            font-weight: 400;
+
         }
     }
 }
@@ -306,6 +306,7 @@ footer {
 
 .media {
     &__link {
+        text-decoration: none;
         color: white;
     }
 }
