@@ -151,7 +151,7 @@ nav {
 .hero__image {
   position: relative;
   width: 50%;
-  background-image: url("../../images/architecture-balconies-building-1829191.jpg");
+  background-image: url("../images/architecture-balconies-building-1829191.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -339,8 +339,8 @@ nav {
 /* FOOTER SECTION */
 footer {
   background-color: black;
-  color: white;
-  padding: 2rem 0 5rem;
+  color: #999;
+  padding: 3rem 0 5rem;
 }
 
 .footer {
@@ -350,16 +350,26 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 2rem;
 }
 
 .footer i {
-  color: white;
-  font-size: 1.5rem;
+  color: #c7c7c7;
+  font-size: 2rem;
 }
 
 .email__link {
   text-decoration: none;
-  color: white;
+  color: #c7c7c7;
+  font-size: 2rem;
+}
+
+.email__link:hover, .email__link:focus {
+  color: #FFF;
+}
+
+.email__link:hover i, .email__link:focus i {
+  color: #FFF;
 }
 
 .footer-media {
@@ -368,7 +378,15 @@ footer {
 
 .media__link {
   text-decoration: none;
-  color: white;
+  color: #c7c7c7;
+}
+
+.media__link:hover, .media__link:focus {
+  color: #FFF;
+}
+
+.media__link:hover i, .media__link:focus i {
+  color: #FFF;
 }
 
 /******************/
@@ -552,6 +570,15 @@ footer {
   }
   .projects {
     width: 100%;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */

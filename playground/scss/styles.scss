@@ -141,7 +141,7 @@ nav {
     &__image {
         position: relative;
         width: 50%;
-        background-image: url('../../images/architecture-balconies-building-1829191.jpg');
+        background-image: url('../images/architecture-balconies-building-1829191.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -292,23 +292,30 @@ nav {
 
 footer {
     background-color: black;
-    color: white;
-    padding: 2rem 0 5rem;
+    color: #999;
+    padding: 3rem 0 5rem;
 }
 
 .footer {
     display: flex;
     justify-content: space-between;
-    
+    font-size: 2rem;
     i {
-        color: white;
-        font-size: 1.5rem;
+        color: #c7c7c7;
+        font-size: 2rem;
     }
 }
 
 .email__link {
     text-decoration: none;
-    color: white;
+    color: #c7c7c7;
+    font-size: 2rem;
+    &:hover, &:focus {
+        color: #FFF;
+        i {
+            color: #FFF;
+        }
+    }
 }
 
 .footer-media {
@@ -318,7 +325,13 @@ footer {
 .media {
     &__link {
         text-decoration: none;
-        color: white;
+        color: #c7c7c7;
+        &:hover, &:focus {
+            color: #FFF;
+            i {
+                color: #FFF;
+            }
+        }
     }
 }
 
@@ -502,5 +515,9 @@ footer {
     }
     .projects {
         width: 100%;
+    }
+    .footer {
+        flex-direction: column;
+        justify-content: center;
     }
 }
