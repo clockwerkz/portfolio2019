@@ -128,6 +128,7 @@ nav {
 }
 
 .navbar__link--footer {
+  font-size: 1.6rem;
   cursor: pointer;
   text-decoration: none;
   color: #c7c7c7;
@@ -239,7 +240,6 @@ nav {
 .projects__title {
   margin: 0 10rem 10rem;
   font-size: 5rem;
-  color: #19232A;
 }
 
 .projects__title:after {
@@ -380,9 +380,16 @@ footer {
   font-size: 2rem;
 }
 
+.email__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+
 .email__link {
   display: block;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   text-decoration: none;
   color: #c7c7c7;
   font-size: 2rem;
@@ -403,6 +410,11 @@ footer {
 
 .footer-media {
   list-style: none;
+}
+
+.footer-media__wrapper {
+  width: 30%;
+  text-align: right;
 }
 
 .media__link {
@@ -508,6 +520,9 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .footer-media__wrapper {
+    width: 45%;
   }
 }
 
